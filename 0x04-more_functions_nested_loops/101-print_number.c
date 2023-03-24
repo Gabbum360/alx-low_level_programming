@@ -1,4 +1,4 @@
-#include "holberton.h"
+#include "main.h"
 
 /**
  * print_number - print any integer using putchar
@@ -17,13 +17,12 @@ void print_number(int n)
 	else if (n > 0)
 		n *= -1;
 	else
-	       	_putchar('-');
+	_putchar('-');
 	for (count = 0; count < 10; count++)
 	{
 		if (n / y == 0 && x == 0)
 		{
 			y /= 10;
-			
 			continue;
 		}
 		else if (x == 0)
